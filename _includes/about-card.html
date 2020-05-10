@@ -1,7 +1,14 @@
 {% assign me = site.authors | first %}
 <div class="card" style="width: 325px;">
   <div class="card-body">
-    <h5 class="card-title">{{me.short_name}}</h5>
+    <div class="row">
+      <div class="col">
+        <h5 class="card-title">{{me.short_name}}</h5>
+      </div>
+      <div class="col">
+        <img src="assets/img/grayscale-photo-of-woman.jpg" alt="profile" class="rounded-circle" height="76" width="76">
+      </div>
+    </div>    
     <p class="card-text">{{me.content | markdownify | truncatewords: 30 }}</p>
     <a href="/about" class="btn btn-primary">Read more</a>
   </div>
