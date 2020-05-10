@@ -1,4 +1,4 @@
-- name: Home
-  link: /
+- name: Recipes
+  link: /recipes.html
 - name: About
   link: /about.html
