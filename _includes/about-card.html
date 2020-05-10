@@ -1,0 +1,8 @@
+{% assign me = site.authors | first %}
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{me.short_name}}</h5>
+    <p class="card-text">{{me.content | markdownify | truncatewords: 30 }}</p>
+    <a href="/about" class="btn btn-primary">Read more</a>
+  </div>
+</div>
